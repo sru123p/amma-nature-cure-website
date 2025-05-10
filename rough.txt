@@ -1,0 +1,148 @@
+amma-nature-cure-website/
+├── index.html
+├── pages/                     # Additional HTML pages
+│   ├── blog.html              # Blog landing page
+│   ├── single-post.html       # Individual blog post template
+│   ├── testimonials.html      # Patient success stories
+│   └── resources/             # Patient education
+│       ├── diet-plans.html
+│       └── wellness-tips.html
+├── css/
+│   ├── style.css
+│   ├── responsive.css
+│   └── pages/                 # Page-specific styles
+│       ├── blog.css
+│       └── testimonials.css
+├── js/
+│   ├── main.js
+│   ├── form-handler.js
+│   └── modules/               # Feature-specific scripts
+│       ├── blog.js
+│       ├── testimonial-carousel.js
+│       └── resource-filter.js
+├── images/
+│   ├── logo/                  # Brand assets
+│   │   ├── logo.png
+│   │   ├── logo-white.png     # For dark backgrounds
+│   │   └── favicon.ico
+│   ├── doctors/               # Medical team
+│   │   ├── dr-reena.jpg
+│   │   ├── dr-sowmya.jpg
+│   │   └── staff/
+│   │       ├── nurse-1.jpg
+│   │       └── therapist-1.jpg
+│   ├── services/              # Treatment visuals
+│   │   ├── body-detox.jpg
+│   │   ├── leech-therapy.jpg
+│   │   └── before-after/      # Treatment results
+│   │       ├── case1-before.jpg
+│   │       └── case1-after.jpg
+│   ├── clinic/                # Facility photos
+│   │   ├── exterior.jpg
+│   │   ├── waiting-area.jpg
+│   │   └── therapy-rooms/
+│   │       ├── room1.jpg
+│   │       └── room2.jpg
+│   ├── blog/                  # Blog post images
+│   │   ├── post1-featured.jpg
+│   │   └── post1-content/
+│   │       ├── image1.jpg
+│   │       └── diagram1.png
+│   ├── testimonials/          # Patient photos
+│   │   ├── patient1.jpg
+│   │   └── video-thumbnails/
+│   │       └── testimonial1.jpg
+│   └── resources/             # Educational content
+│       ├── diet-chart.jpg
+│       └── exercise-demo.gif
+├── assets/
+│   ├── fonts/                 # Custom typography
+│   │   ├── montserrat.woff2
+│   │   └── opensans.woff
+│   ├── icons/                 # SVG icons
+│   │   ├── facebook.svg
+│   │   └── whatsapp.svg
+│   └── documents/             # Downloadable files
+│       ├── new-patient-form.pdf
+│       └── price-list.pdf
+└── uploads/                   # User-generated content (created by CMS)
+    ├── patient-reviews/
+    └── temp/
+
+    9951715806
+
+Dynamic Content Sections:
+
+/pages/blog/ - For health articles and updates
+
+/pages/testimonials/ - Patient success stories
+
+/pages/resources/ - Educational materials
+
+Enhanced Media Organization:
+
+Before/after treatment galleries
+
+Staff subfolders
+
+Blog post content images
+
+Video thumbnail support
+
+Patient Resources:
+
+Downloadable PDFs
+
+Diet plan visuals
+
+Exercise demonstration GIFs
+
+CMS-Ready Structure:
+
+/uploads/ folder for future content management system integration
+
+Separate template for blog posts
+
+Optimized Assets:
+
+Multiple logo versions
+
+Web fonts in modern formats (WOFF2)
+
+SVG icons for crisp display
+
+
+
+
+Would you like me to:
+
+Provide more specific stock photo recommendations?
+
+Help optimize your own clinic photo for the hero section?
+
+Create a CSS gradient overlay that better matches your brand colors?
+
+(For reference, your current color scheme uses --primary: #4a8f29 (green) and --accent: #ff7e33 (orange))
+
+
+
+Ideal Image Specifications:
+Dimensions: Minimum 1920×1080 pixels
+
+Content: Should show:
+
+Your clinic building/facility OR
+
+Happy patients receiving treatments OR
+
+Calming nature scenes (herbs, yoga, etc.)
+
+Color Tone: Warm earth tones (greens, browns) to match your color scheme
+
+
+git init
+git add .
+git commit -m "First commit - Clinic website"
+git branch -M main
+git remote add origin https://github.com/YOUR-USERNAME/amma-nature-cure-website.git
+git push -u origin main

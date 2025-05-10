@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Blog | Amma Nature Cure</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header (Same as main site) -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="../images/logo/logo.png" alt="Amma Nature Cure World Logo">
+                <div class="logo-text">
+                    <h1>AMMA NATURE CURE WORLD</h1>
+                    <p>A Complete Women's Health Centre</p>
+                </div>
+            </div>
+            
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#doctors">Doctors</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+        <div class="container">
+            <h1>Natural Health Insights</h1>
+            <p>Evidence-based articles on holistic healing</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog-container">
+        <div class="container">
+            <!-- Categories Filter (Mobile Dropdown) -->
+            <div class="category-filter">
+                <select id="mobile-category-filter" class="mobile-only">
+                    <option value="all">All Categories</option>
+                    <option value="detox">Detoxification</option>
+                    <option value="womens-health">Women's Health</option>
+                    <option value="nutrition">Nutrition</option>
+                </select>
+                
+                <div class="desktop-only">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="detox">Detox</button>
+                    <button class="category-btn" data-category="womens-health">Women's Health</button>
+                    <button class="category-btn" data-category="nutrition">Nutrition</button>
+                </div>
+            </div>
+
+            <!-- Blog Posts Grid -->
+            <div class="blog-posts">
+                <!-- Post 1 -->
+                <article class="blog-post" data-category="detox">
+                    <div class="post-image">
+                        <img src="../images/blog/detox-featured.jpg" alt="Liver Detox Methods">
+                        <span class="category-badge">Detoxification</span>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> June 15, 2023</span>
+                            <span><i class="far fa-user"></i> Dr. Reena</span>
+                        </div>
+                        <h3><a href="single-post.html">5-Day Liver Detox Protocol</a></h3>
+                        <p>Learn how to gently cleanse your liver using Ayurvedic principles combined with modern naturopathy...</p>
+                        <a href="single-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="blog-post" data-category="womens-health">
+                    <div class="post-image">
+                        <img src="../images/blog/pcos-featured.jpg" alt="PCOS Natural Management">
+                        <span class="category-badge">Women's Health</span>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> May 28, 2023</span>
+                            <span><i class="far fa-user"></i> Dr. Sowmya</span>
+                        </div>
+                        <h3><a href="single-post.html">Managing PCOS Naturally</a></h3>
+                        <p>Evidence-based natural approaches to regulate hormones and improve PCOS symptoms without medication...</p>
+                        <a href="single-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Add more posts following same structure -->
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h3>Get Health Tips Directly</h3>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer (Same as main site) -->
+    <footer>
+        <!-- Copy footer from index.html -->
+    </footer>
+
+    <script src="../js/modules/blog-filter.js"></script>
+</body>
+</html>

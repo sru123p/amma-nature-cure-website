@@ -1,0 +1,236 @@
+/* Blog Hero */
+.blog-hero {
+    background: linear-gradient(rgba(74, 143, 41, 0.8), rgba(74, 143, 41, 0.8)), 
+                url('../../images/blog/blog-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Category Filter */
+.category-filter {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.category-filter select.mobile-only {
+    display: none;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--primary);
+    border-radius: 30px;
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg fill="%234a8f29" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat;
+    background-position: right 15px center;
+    background-size: 20px;
+}
+
+.category-btn {
+    background: none;
+    border: 2px solid #e0e0e0;
+    padding: 8px 20px;
+    margin: 0 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.category-btn.active, .category-btn:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+/* Blog Posts Grid */
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.blog-post {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+.post-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.blog-post:hover .post-image img {
+    transform: scale(1.05);
+}
+
+.category-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--accent);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+}
+
+.post-content {
+    padding: 20px;
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.post-meta i {
+    margin-right: 5px;
+}
+
+.blog-post h3 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.blog-post h3 a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.blog-post p {
+    color: var(--gray);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.read-more {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+}
+
+.read-more i {
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+.read-more:hover i {
+    transform: translateX(5px);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.pagination a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    border-radius: 50%;
+    color: var(--dark);
+    text-decoration: none;
+    border: 1px solid #e0e0e0;
+}
+
+.pagination a.active, .pagination a:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+/* Newsletter */
+.newsletter {
+    background: var(--light);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.newsletter h3 {
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+#newsletter-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#newsletter-form input {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+}
+
+#newsletter-form button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0 30px;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#newsletter-form button:hover {
+    background: var(--primary-dark);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .category-filter .desktop-only {
+        display: none;
+    }
+    
+    .category-filter select.mobile-only {
+        display: block;
+    }
+    
+    .blog-posts {
+        grid-template-columns: 1fr;
+    }
+    
+    #newsletter-form {
+        flex-direction: column;
+    }
+    
+    #newsletter-form input {
+        border-radius: 30px;
+        margin-bottom: 10px;
+    }
+    
+    #newsletter-form button {
+        border-radius: 30px;
+        padding: 15px;
+    }
+}

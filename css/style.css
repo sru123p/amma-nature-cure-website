@@ -621,3 +621,91 @@ footer {
     opacity: 0.8;
     font-size: 0.9rem;
 }
+
+/* ===== Timings ===== */
+/* Opening Hours Card */
+.opening-hours-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin: 20px 0;
+}
+
+.opening-hours-card h3 {
+    color: #4a8f29; /* Your primary color */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.opening-hours-card h3 i {
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+.hours-table {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.day-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 8px;
+    background: rgba(74, 143, 41, 0.05); /* Light green bg */
+}
+
+.day {
+    font-weight: 600;
+    color: #333;
+    flex: 1;
+}
+
+.time {
+    text-align: right;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.time-slot {
+    color: #555;
+    font-size: 0.95em;
+}
+
+/* Closed day styling */
+.day-row.closed {
+    background: rgba(231, 76, 60, 0.05); /* Light red bg */
+}
+
+.closed-text {
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+/* Current day highlight (add via JavaScript) */
+.day-row.current-day {
+    background: rgba(74, 143, 41, 0.1);
+    box-shadow: inset 3px 0 0 #4a8f29;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .day-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .time {
+        text-align: left;
+        flex-direction: row;
+        gap: 15px;
+    }
+}

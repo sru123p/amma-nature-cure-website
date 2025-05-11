@@ -48,11 +48,6 @@ document.getElementById('current-year').textContent = new Date().getFullYear();
 // Load services dynamically
 const services = [
     {
-        title: "Body Detox",
-        description: "Cleanse your body of toxins and restore natural balance with our specialized detox programs.",
-        image: "images/services/body-detox.jpg"
-    },
-    {
         title: "Leech Therapy",
         description: "An ancient healing technique that improves blood circulation and promotes healing.",
         image: "images/services/leech-therapy.jpg"
@@ -73,9 +68,59 @@ const services = [
         image: "images/services/reflexology.jpg"
     },
     {
+        title: "Physiotherapy",
+        description: "Pain management, improves mobility, posture correction, enhances balance, coordination.",
+        image: "images/services/physiotherapy.jpg"
+    },
+    {
+        title: "Yoga",
+        description: "Physically-prevention of diseases, increases blood circulation, body strengthening. Mentally-clarifies the mind, improves brain health, balances focus, concentration",
+        image: "images/services/yoga.jpg"
+    },
+    {
+        title: "Kriyas",
+        description: "Clears nasal passages, helps in sinusitis, ENT infections, migraine, breathing issues etc..",
+        image: "images/services/kriyas.jpg"
+    },
+    {
+        title: "Fasting Therapy",
+        description: "Fasting is nature's  most supreme medicine:replaces dead, damaged cells in skin, fades away scars, regularise hormone levels, detoxifies the body, cleans GUT",
+        image: "images/services/fasting-therapy.jpg"
+    },
+    {
+        title: "Enema",
+        description: "Flush out toxins, cures indigestion, bloating, constipation, acidity, helps in wgt management, body detoxification, clarifies skin",
+        image: "images/services/enema.jpg"
+    },
+    {
         title: "Diet & Nutrition",
         description: "Personalized dietary plans to support your health goals and address specific conditions.",
         image: "images/services/diet-nutrition.jpg"
+    },
+    {
+        title: "Body Detox",
+        description: "Cleanse your body of toxins and restore natural balance with our specialized detox programs.",
+        image: "images/services/body-detox.jpg"
+    },
+    {
+        title: "Local Massages",
+        description: "Increases blood circulation, soothens nerve supply, stimulates lymphatic fluid movement, reduces muscle tension",
+        image: "images/services/local-massages.jpg"
+    },
+    {
+        title: "BCM",
+        description: "Improves coordination, flexibility, fat reduction, increases metabolism, activates circulation.",
+        image: "images/services/bcm.jpg"
+    },
+    {
+        title: "Mustard Pack",
+        description: "Acts as counterirritant, improves circulation, anti-inflammatory, helps in rheumatoid arthritis, osteoarthritis, chest congestion",
+        image: "images/services/mustard-pack.jpg"
+    },
+    {
+        title: "Pain Management",
+        description: "By physiotherapy, hydrotherapy, local massages, reflexology, bcm helps in relieving of pain",
+        image: "images/services/pain-management.jpg"
     }
 ];
 

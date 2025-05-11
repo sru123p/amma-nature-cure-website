@@ -69,7 +69,6 @@ amma-nature-cure-website/
     ├── patient-reviews/
     └── temp/
 
-    9951715806
 
 Dynamic Content Sections:
 

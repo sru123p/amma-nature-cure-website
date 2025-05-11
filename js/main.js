@@ -202,7 +202,7 @@ mainNavItems.forEach(item => {
 
 // Populate footer services
 const footerServices = document.getElementById('footer-services');
-services.slice(0, 5).forEach(service => {
+services.slice(0, 15).forEach(service => {
     const li = document.createElement('li');
     const a = document.createElement('a');
     a.href = "#services";
